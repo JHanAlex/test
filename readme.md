@@ -1,65 +1,93 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## About Project
+Angular + Laravel Exercise
+The purpose of this drill is to test fullstack skills of the candidate.
+Instructions
+...A competitive tournament with multiple participants has just finished - the results are available.
+Your task is to build a single-page application that displays the tournament's results.
+You should create a laravel application API to retrieve the tournament data, In MVC concept. You should
+use Eloquent model for data layer, Migrations for creating the DB, and controller for creating the
+endpoints
+The tournament participants (the "players") have each achieved a score, ranging from 0 up to 150 points.
+API specification:
+Each player has four properties
+"id" - the player's numeric identifier, its value is unique to the player
+"name" - player's name
+"level" - player's competition category, either a rookie, an amateur, or a pro
+"score" - player's tournament result
+“Suspected” - true/false - is player suspected or not
+The API is available via the following endpoints:
+GET /api/v1/players?start=<num>&n=<num>
+The response is a list of players in JSON format, as demonstrated by the example list below:
+[
+    {
+        "name": "alice",
+        "level": "rookie",
+        "score": 84,
+        “Suspected”: true,
+        "id": 1
+    },
+    {
+        "name": "bob",
+        "level": "pro",
+        "score": 136,
+        “Suspected”: false,
+        "id": 2
+    }
+]
 
-## About Laravel
+The two obligatory query parameters are:
+"start" - position of the first player to include in the response
+"n" - count, number of players to include in the response
+In addition to that, there are 2 more optional query parameters supported:
+"level" - filter by player level (level=rookie returns only players who are rookies)
+"search" - free search on all the player's attributes - name, level, id and score
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+The total count of players that fit the query filters is returned in the response header,
+via the field x-total.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Adding client side files to the server:
+The web application :
+● Has to contain a form to add new player details
+● has to contain a table to display the results, a row for each player, with 4 columns showing all
+player's attributes - id, name, level and score.
+● If you find that it serves the purpose of displaying the tournament's results - you may add more
+columns with other info, as you wish.
+● the table must have pagination
+● the table must have an option of filtering by level, to display only the players that have a certain
+level. Please make the filter selection available on the corresponding column header.
+● the table should have a free search input, to allow the user to type a search phrase. The table
+displays only these players that the search phrase is a substring of their name, their id, their level or
+their score.
+● Player names should always be capitalized
+● Players that are suspected of cheating need to have a clear table
+indication - the entire row containing the player’s details should be
+“highlighted”. Freely choose how to visually create the distinguishing effect of cheaters (colors, fonts
+etc...) to make it clear the player is a suspect.
+● In addition to the table, the page should contain the title “Tournament 101 - Final Results”. Place
+and size it to your best judgment.
+Misc:
+● For testing, going to use latest Chrome and FF only. There is no need to support other or not up to
+date browsers.
+● Use AngularJS 1.5 framework
+● You should write the table functionality by yourself, not use public plugins
+● You can use helpful plugins as “lodash”, “jQuery”, “Underscore.js”
+● For styling, you can use Bootstrap, including Bootstrap themes such as Material. You can also
+choose doing it by hand, which is OK as well. The page should have style to serve the purpose of
+displaying the information clearly and pleasantly.
+● Keep in mind the various resolutions and window sizes that might be used (within the reasonable
+range, down to 720p width).
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## Install
+1. Clone
+2. composer update
+3. npm install
 
-## Learning Laravel
+4. Make .env file
+5. php artisan key:generate 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+6. Create DataBase
+7. Run migration
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. Compile app.js - npm run watch
