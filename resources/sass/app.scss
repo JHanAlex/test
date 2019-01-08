@@ -1,0 +1,188 @@
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic);
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//FontAwesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+button:hover,button:focus,button:active{
+    box-shadow: none!important;
+    outline: 0;
+}
+.is-invalid  * {
+    color: #ff5252!important;
+}
+.v-list__tile:hover {
+    text-decoration: none!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.text-border-light-orange {
+    text-shadow: #fff6f3 1px 0px, #fff6f3 1px 1px, #fff6f3 0px 1px, #fff6f3 -1px 1px, #fff6f3 -1px 0px, #fff6f3 -1px -1px, #fff6f3 0px -1px, #fff6f3 1px -1px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px;
+}
+.text-border-blue {
+    text-shadow: #005a9d 1px 0px, #005a9d 1px 1px, #005a9d 0px 1px, #005a9d -1px 1px, #005a9d -1px 0px, #005a9d -1px -1px, #005a9d 0px -1px, #005a9d 1px -1px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px;
+}
+.text-border-orange {
+    text-shadow: #ff7932 1px 0px, #ff7932 1px 1px, #ff7932 0px 1px, #ff7932 -1px 1px, #ff7932 -1px 0px, #ff7932 -1px -1px, #ff7932 0px -1px, #ff7932 1px -1px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px;
+}
+.text-border-main {
+    text-shadow: #00a7a9 1px 0px, #00a7a9 1px 1px, #00a7a9 0px 1px, #00a7a9 -1px 1px, #00a7a9 -1px 0px, #00a7a9 -1px -1px, #00a7a9 0px -1px, #00a7a9 1px -1px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px;
+}
+.text-border-light-gray {
+    text-shadow: #dee1e2 1px 0px, #dee1e2 1px 1px, #dee1e2 0px 1px, #dee1e2 -1px 1px, #dee1e2 -1px 0px, #dee1e2 -1px -1px, #dee1e2 0px -1px, #dee1e2 1px -1px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px;
+}
+.text-border-gray {
+    text-shadow: #c9cdcd 1px 0px, #c9cdcd 1px 1px, #c9cdcd 0px 1px, #c9cdcd -1px 1px, #c9cdcd -1px 0px, #c9cdcd -1px -1px, #c9cdcd 0px -1px, #c9cdcd 1px -1px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px;
+}
+.text-border-dark-gray {
+    text-shadow: #9a9a9a 1px 0px, #9a9a9a 1px 1px, #9a9a9a 0px 1px, #9a9a9a -1px 1px, #9a9a9a -1px 0px, #9a9a9a -1px -1px, #9a9a9a 0px -1px, #9a9a9a 1px -1px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px;
+}
+.text-border-turquoise {
+    text-shadow: #eef9ff 1px 0px, #eef9ff 1px 1px, #eef9ff 0px 1px, #eef9ff -1px 1px, #eef9ff -1px 0px, #eef9ff -1px -1px, #eef9ff 0px -1px, #eef9ff 1px -1px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px;
+}
+.text-border-white {
+    text-shadow: #fff 1px 0px, #fff 1px 1px, #fff 0px 1px, #fff -1px 1px, #fff -1px 0px, #fff -1px -1px, #fff 0px -1px, #fff 1px -1px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px;
+}
+.text-border-black {
+    text-shadow: #383838 1px 0px, #383838 1px 1px, #383838 0px 1px, #383838 -1px 1px, #383838 -1px 0px, #383838 -1px -1px, #383838 0px -1px, #383838 1px -1px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px;
+}
+.text-border-2x-light-orange {
+    text-shadow: #fff6f3 2px 0px, #fff6f3 2px 2px, #fff6f3 0px 2px, #fff6f3 -2px 2px, #fff6f3 -2px 0px, #fff6f3 -2px -2px, #fff6f3 0px -2px, #fff6f3 2px -2px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px;
+}
+.text-border-2x-blue {
+    text-shadow: #005a9d 2px 0px, #005a9d 2px 2px, #005a9d 0px 2px, #005a9d -2px 2px, #005a9d -2px 0px, #005a9d -2px -2px, #005a9d 0px -2px, #005a9d 2px -2px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px;
+}
+.text-border-2x-orange {
+    text-shadow: #ff7932 2px 0px, #ff7932 2px 2px, #ff7932 0px 2px, #ff7932 -2px 2px, #ff7932 -2px 0px, #ff7932 -2px -2px, #ff7932 0px -2px, #ff7932 2px -2px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px;
+}
+.text-border-2x-main {
+    text-shadow: #00a7a9 2px 0px, #00a7a9 2px 2px, #00a7a9 0px 2px, #00a7a9 -2px 2px, #00a7a9 -2px 0px, #00a7a9 -2px -2px, #00a7a9 0px -2px, #00a7a9 2px -2px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px;
+}
+.text-border-2x-light-gray {
+    text-shadow: #dee1e2 2px 0px, #dee1e2 2px 2px, #dee1e2 0px 2px, #dee1e2 -2px 2px, #dee1e2 -2px 0px, #dee1e2 -2px -2px, #dee1e2 0px -2px, #dee1e2 2px -2px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px;
+}
+.text-border-2x-gray {
+    text-shadow: #c9cdcd 2px 0px, #c9cdcd 2px 2px, #c9cdcd 0px 2px, #c9cdcd -2px 2px, #c9cdcd -2px 0px, #c9cdcd -2px -2px, #c9cdcd 0px -2px, #c9cdcd 2px -2px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px;
+}
+.text-border-2x-dark-gray {
+    text-shadow: #9a9a9a 2px 0px, #9a9a9a 2px 2px, #9a9a9a 0px 2px, #9a9a9a -2px 2px, #9a9a9a -2px 0px, #9a9a9a -2px -2px, #9a9a9a 0px -2px, #9a9a9a 2px -2px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px;
+}
+.text-border-2x-turquoise {
+    text-shadow: #eef9ff 2px 0px, #eef9ff 2px 2px, #eef9ff 0px 2px, #eef9ff -2px 2px, #eef9ff -2px 0px, #eef9ff -2px -2px, #eef9ff 0px -2px, #eef9ff 2px -2px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px;
+}
+.text-border-2x-white {
+    text-shadow: #fff 2px 0px, #fff 2px 2px, #fff 0px 2px, #fff -2px 2px, #fff -2px 0px, #fff -2px -2px, #fff 0px -2px, #fff 2px -2px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px;
+}
+.text-border-2x-black {
+    text-shadow: #383838 2px 0px, #383838 2px 2px, #383838 0px 2px, #383838 -2px 2px, #383838 -2px 0px, #383838 -2px -2px, #383838 0px -2px, #383838 2px -2px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px;
+}
+.text-border-3x-light-orange {
+    text-shadow: #fff6f3 3px 0px, #fff6f3 3px 3px, #fff6f3 0px 3px, #fff6f3 -3px 3px, #fff6f3 -3px 0px, #fff6f3 -3px -3px, #fff6f3 0px -3px, #fff6f3 3px -3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px, #fff6f3 0 0 3px;
+}
+.text-border-3x-blue {
+    text-shadow: #005a9d 3px 0px, #005a9d 3px 3px, #005a9d 0px 3px, #005a9d -3px 3px, #005a9d -3px 0px, #005a9d -3px -3px, #005a9d 0px -3px, #005a9d 3px -3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px, #005a9d 0 0 3px;
+}
+.text-border-3x-orange {
+    text-shadow: #ff7932 3px 0px, #ff7932 3px 3px, #ff7932 0px 3px, #ff7932 -3px 3px, #ff7932 -3px 0px, #ff7932 -3px -3px, #ff7932 0px -3px, #ff7932 3px -3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px, #ff7932 0 0 3px;
+}
+.text-border-3x-main {
+    text-shadow: #00a7a9 3px 0px, #00a7a9 3px 3px, #00a7a9 0px 3px, #00a7a9 -3px 3px, #00a7a9 -3px 0px, #00a7a9 -3px -3px, #00a7a9 0px -3px, #00a7a9 3px -3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px, #00a7a9 0 0 3px;
+}
+.text-border-3x-light-gray {
+    text-shadow: #dee1e2 3px 0px, #dee1e2 3px 3px, #dee1e2 0px 3px, #dee1e2 -3px 3px, #dee1e2 -3px 0px, #dee1e2 -3px -3px, #dee1e2 0px -3px, #dee1e2 3px -3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px, #dee1e2 0 0 3px;
+}
+.text-border-3x-gray {
+    text-shadow: #c9cdcd 3px 0px, #c9cdcd 3px 3px, #c9cdcd 0px 3px, #c9cdcd -3px 3px, #c9cdcd -3px 0px, #c9cdcd -3px -3px, #c9cdcd 0px -3px, #c9cdcd 3px -3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px, #c9cdcd 0 0 3px;
+}
+.text-border-3x-dark-gray {
+    text-shadow: #9a9a9a 3px 0px, #9a9a9a 3px 3px, #9a9a9a 0px 3px, #9a9a9a -3px 3px, #9a9a9a -3px 0px, #9a9a9a -3px -3px, #9a9a9a 0px -3px, #9a9a9a 3px -3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px, #9a9a9a 0 0 3px;
+}
+.text-border-3x-turquoise {
+    text-shadow: #eef9ff 3px 0px, #eef9ff 3px 3px, #eef9ff 0px 3px, #eef9ff -3px 3px, #eef9ff -3px 0px, #eef9ff -3px -3px, #eef9ff 0px -3px, #eef9ff 3px -3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px, #eef9ff 0 0 3px;
+}
+.text-border-3x-white {
+    text-shadow: #fff 3px 0px, #fff 3px 3px, #fff 0px 3px, #fff -3px 3px, #fff -3px 0px, #fff -3px -3px, #fff 0px -3px, #fff 3px -3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px;
+}
+.text-border-3x-black {
+    text-shadow: #383838 3px 0px, #383838 3px 3px, #383838 0px 3px, #383838 -3px 3px, #383838 -3px 0px, #383838 -3px -3px, #383838 0px -3px, #383838 3px -3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px, #383838 0 0 3px;
+}
+
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+    color: transparent !important;
+
+    &:after {
+      animation: spinAround 500ms infinite linear;
+      border: 2px solid #dbdbdb;
+      border-radius: 50%;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      content: "";
+      display: block;
+      height: 1em;
+      width: 1em;
+      position: absolute;
+      left: calc(50% - (1em / 2));
+      top: calc(50% - (1em / 2));
+  }
+}
+
+@keyframes spinAround {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+
+.fullpage-loader {
+    position: absolute;
+    top: 43%;
+    top: calc(50% - 55px);
+    left: 43%; 
+    left: calc(50% - 55px);
+}
+
+@font-face {
+    font-family: 'Segoe PrintRegular';
+    src: url('/fonts/SegoePrintRegular.eot');
+    src: url('/fonts/SegoePrintRegular.eot?#iefix') format('embedded-opentype'), url('/fonts/SegoePrintRegular.woff') format('woff'), url('/fonts/SegoePrintRegular.ttf') format('truetype');
+}
+.recipe {
+    font-size: 30pt;
+    font-family: 'Segoe PrintRegular','Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;    
+}
+#prices_and_times {
+    background: #cdedf7 url(/img/colorClouds.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+@media (max-width: 320px)
+{
+    .fullpage-loader {
+        top: 42%;
+        left: 34%;   
+    }
+}
+button:hover,button:focus,button:active{
+    box-shadow: none!important;
+    outline: 0;
+}
+.v-list__tile:hover {
+    text-decoration: none!important;
+}
+.v-btn[href] {
+    text-decoration: none!important;
+}
